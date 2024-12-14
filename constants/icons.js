@@ -17,6 +17,7 @@ import Notification from "../assets/icons/Notification.png";
 import Googlelogo from "../assets/icons/Googlelogo.png";
 import Applelogo from "../assets/icons/Applelogo.png";
 import Gigabytelogo from "../assets/icons/Gigabytelogo.png";
+import bookmarkselected from "../assets/icons/bookmarkselected.png";
 
 export default {
   play,
@@ -38,4 +39,5 @@ export default {
   Googlelogo,
   Applelogo,
   Gigabytelogo,
+  bookmarkselected,
 };
