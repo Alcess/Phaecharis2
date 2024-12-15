@@ -6,6 +6,7 @@ import {
   FlatList,
   Image,
   TouchableOpacity,
+  Alert
 } from 'react-native';
 import { icons } from '../constants';
 import { images } from '../constants';
@@ -45,6 +46,13 @@ const HomeScreen = () => {
     },
   ];
 
+  // Function to handle "Apply" button
+       const handleApply = (jobTitle) => {
+        Alert.alert('Application Started', `You have applied for ${jobTitle}`);
+        // Navigate to application screen if needed
+        // navigation.navigate('ApplicationScreen', { jobTitle });
+      };
+
   // Render job cards
   const WorkshopCards = ({ item }) => (
     <View style={styles.card}>
@@ -64,9 +72,9 @@ const HomeScreen = () => {
           <Text style={styles.jobTag}>{item.level}</Text>
           <Text style={styles.jobTag}>{item.type}</Text>
         </View>
-        <TouchableOpacity style={styles.applyButton}>
-          <Text style={styles.applyText}>Apply</Text>
-        </TouchableOpacity>
+        <TouchableOpacity style={styles.applyButton} onPress={() => handleApply(item.title)}>
+            <Text style={styles.applyText}>Apply</Text>
+          </TouchableOpacity>
       </View>
     </View>
   );

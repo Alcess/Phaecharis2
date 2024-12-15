@@ -9,6 +9,7 @@ import FindYourJob from '../../components/FindYourJob'
 import Workshops from '../../components/Workshops'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { Link } from 'expo-router'
 
 
 const Home = () => {
@@ -54,12 +55,11 @@ const Home = () => {
                 <Text className="text-base font-sansBold text-black">
                   Recent Job List
                   </Text>
-                  <TouchableOpacity>
-                  <Text className="text-sm font-sansRegular text-black">
-                    See More...
+                  <Link href="/MoreJobs">
+                    <Text className="text-sm font-sansRegular text-black">
+                     See More
                     </Text>
-                    </TouchableOpacity>
-
+                  </Link>
                   </View>
               </View>
               <View className="w-full flex-1 pt-5 pb-8">
@@ -70,11 +70,11 @@ const Home = () => {
               <Text className="text-base font-sansBold text-black">
                   Find Your Job
                   </Text>
-                  <TouchableOpacity>
-                  <Text className="text-sm font-sansRegular text-black">
-                    See More...
+                  <Link href="/MoreJobs">
+                    <Text className="text-sm font-sansRegular text-black">
+                     See More
                     </Text>
-                    </TouchableOpacity>
+                  </Link>
                   </View>
               </View>
               <View className="w-full flex-1 pt-5 pb-8">
@@ -85,11 +85,11 @@ const Home = () => {
               <Text className="text-base font-sansBold text-black">
                   Find Your Job
                   </Text>
-                  <TouchableOpacity>
-                  <Text className="text-sm font-sansRegular text-black">
-                    See More...
+                  <Link href="/Workshopsexpand">
+                    <Text className="text-sm font-sansRegular text-black">
+                     See More
                     </Text>
-                    </TouchableOpacity>
+                  </Link>
                   </View>
               </View>
               <View className="w-full flex-1 pt-5 pb-8">
